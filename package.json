@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/gaynor-landmark/Peanut-Butter-and-Jelly/issues"
   },
-  "homepage": "https://github.com/gaynor-landmark/Peanut-Butter-and-Jelly#readme"
+  "homepage": "https://github.com/gaynor-landmark/Peanut-Butter-and-Jelly#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "guid": "0.0.12",
+    "jquery": "^2.2.1",
+    "superagent": "^1.7.2",
+    "tape": "^4.4.0",
+    "watchify": "^3.7.0"
+  }
 }
