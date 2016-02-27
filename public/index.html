@@ -8,5 +8,15 @@
     <h1>Peanut-Butter-and-Jelly</h1>
     <h2>Peanut Butter</h2>
     <div id='table'></div>
+    <table>
+      <script id="pb-template" type="x-handlebars-template">​
+        <tr>
+          <th>Make</th><th>Description</th>
+        </tr>
+        {{#each this}}​
+          <tr><td>{{make}}</td><td>{{description}}</td></tr>
+        {{/each}}
+  ​    </script> 
+    </table>
   </body>
 </html>
