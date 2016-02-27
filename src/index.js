@@ -1,8 +1,10 @@
 var $ = require('jquery')
+var loadPeanutButter = require('./loadPeanutButter')
+var addListeners = require('./addListeners')
 
-$(document).ready(
-
+$(document).ready(function(){
   console.log("ready")
-  // console.log("watching")
-
+  loadPeanutButter()
+//  addListenters()
+  }
 )
