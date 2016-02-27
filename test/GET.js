@@ -21,6 +21,7 @@ var expectedPeanutButter = [ {
     }
   ]
 
+
   test("GET returns the peanutButter", function(t){
     request(server).get('/peanutButter')
     .expect('Content type', /JSON/)
@@ -28,8 +29,8 @@ var expectedPeanutButter = [ {
 	  .end(function (err, res) {
 	  	t.equal(res.type, 'application/json', 'application/json')
 	  	t.equal(res.status, 200, 'status code 200')
-	  	t.equal(res.body.peanutButter.length, 3, 'correct length')
-	  	t.deepEqual(expectedPeanutButter, res.body.peanutButter, "the actual data and expected data are the same")
+	  	t.equal(res.body.length, 3, 'correct length')
+	  	t.deepEqual(expectedPeanutButter, res.body, "the actual data and expected data are the same")
 	  })
     t.end()
   } )
